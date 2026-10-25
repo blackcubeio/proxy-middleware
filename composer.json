@@ -1,0 +1,57 @@
+{
+    "name": "blackcube/proxy-middleware",
+    "description": "Yiisoft TrustedHostsNetworkResolver fork with CIDR support in withTrustedIps()",
+    "keywords": [
+        "yii",
+        "proxy",
+        "middleware",
+        "cidr",
+        "psr-15",
+        "trusted-hosts"
+    ],
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "readme": "README.md",
+    "homepage": "https://github.com/blackcubeio/proxy-middleware",
+    "support": {
+        "issues": "https://github.com/blackcubeio/proxy-middleware/issues",
+        "source": "https://github.com/blackcubeio/proxy-middleware"
+    },
+    "authors": [
+        {
+            "name": "Philippe Gaultier",
+            "email": "philippe@blackcube.io"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.2",
+        "yiisoft/proxy-middleware": "^1.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "^5.3",
+        "codeception/module-asserts": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Blackcube\\ProxyMiddleware\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Blackcube\\ProxyMiddleware\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-devel": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.2"
+        }
+    }
+}
